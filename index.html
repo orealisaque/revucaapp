@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Revuca.App - Site de Anúncios para Acompanhantes</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    </head>    
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo"> <!-- Logo do site -->
+                <h1>Revuca.App</h1>
+            </div>
+            <div class="auth-options">
+                <select id="login-type">
+                    <option value="cliente">Login como Cliente</option>
+                    <option value="acompanhante">Login como Acompanhante</option>
+                </select>
+                <button id="login-btn">Login</button>
+                <select id="register-type">
+                    <option value="cliente">Cadastro como Cliente</option>
+                    <option value="acompanhante">Cadastro como Acompanhante</option>
+                </select>
+                <button id="register-btn">Cadastro</button>
+                <button id="publish-ad">Publicar Anúncio</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar Principal -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#acompanhantes">Acompanhantes</a></li>
+            <li><a href="#massagistas">Massagistas</a></li>
+            <li><a href="#videochamadas">Videochamadas</a></li>
+            <li>
+                <select id="filter-gender">
+                    <option value="garotas">Garotas</option>
+                    <option value="trans">Trans</option>
+                    <option value="homens">Homens</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Busca Avançada -->
+    <section class="advanced-search">
+        <div class="search-fields">
+            <input type="text" placeholder="Onde você está?">
+            <input type="text" placeholder="O que você procura?">
+        </div>
+        <div class="filter-options">
+            <select>
+                <option>Selecione uma cidade</option>
+                <!-- Outras opções de cidade -->
+            </select>
+            <select>
+                <option>Preço Mínimo</option>
+                <!-- Outras opções de preço -->
+            </select>
+            <select>
+                <option>Idade</option>
+                <!-- Outras opções de idade -->
+            </select>
+            <select>
+                <option>Atendimento para</option>
+                <!-- Outras opções de atendimento -->
+            </select>
+        </div>
+        <button class="search-button">Pesquisar</button>
+    </section>
+
+    <div class="highlight-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="./assets/32_f660b.jpg" alt="Imagem de Destaque 1">
+                <div class="carousel-text">
+                    <h2>Texto do Slide 1</h2>
+                    <p>Descrição para o slide 1.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="./assets/32_f660b.jpg" alt="Imagem de Destaque 2">
+                <div class="carousel-text">
+                    <h2>Texto do Slide 2</h2>
+                    <p>Descrição para o slide 2.</p>
+                </div>
+            </div>
+            <!-- Adicione mais slides conforme necessário -->
+        </div>
+        <div class="carousel-controls">
+            <span class="arrow prev">←</span>
+            <span class="arrow next">→</span>
+        </div>
+    </div>
+            <!-- Mais slides aqui -->
+        </div>
+        <div class="carousel-controls">
+            <button class="prev">Anterior</button>
+            <button class="next">Próximo</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Cards de Acompanhantes -->
+    <section class="acompanhantes-cards">
+        <!-- Aqui iremos renderizar cada card de acompanhante com JavaScript -->
+        <section class="acompanhantes-cards">
+            <div class="card">
+                <img src="./assets/32_f660b.jpg" alt="Acompanhante">
+                <h3>Nome do Acompanhante</h3>
+                <p>Localização: Cidade X</p>
+                <p>Idade: 25</p>
+                <p>Preço: R$ 300</p>
+                <p><strong>Verificada</strong></p>
+                <p>Vídeos: 5 disponíveis</p>
+            </div>
+            <!-- Repetir o card para outros acompanhantes -->
+        </section>
+
+        </section>  
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
